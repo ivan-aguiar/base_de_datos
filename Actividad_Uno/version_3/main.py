@@ -32,6 +32,6 @@ raw_data = {"ID": [student1.identifier],
             "Course ID": [course1.identifier],
             "Course": [course1.name]}
 df = pd.DataFrame(raw_data, columns = ["ID", "Name", "Surname", "Course ID", "Course"])
-df.to_csv("data.csv")
+df.to_csv("data.csv", mode="a", index=False, header=False)
 df
 
